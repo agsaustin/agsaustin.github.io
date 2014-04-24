@@ -1,0 +1,37 @@
+@import 'reset';
+@import 'jquery.fullPage';
+
+html, body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #6affd3;
+	color: #304f55;
+	text-align: center;
+}
+
+h1 {
+	// font-weight: lighter;
+	font-size: 4em;
+}
+
+img {max-width: 100%;}
+
+blockquote {
+	font-size: 3em;
+	font-style: italic;
+	font-family: 'Times', serif;
+	max-width: 50%;
+	padding: 5px;
+	margin: 20px auto;
+
+}
+
+#intro {
+	background:url(../images/sun.png) -70px -60px no-repeat ;
+}
+
+.gray {
+	background: #747474;
+	color: #fff;
+}
+
+.controlArrow.next {margin-right: 30px;}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Austin Green Space</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css">
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section" id="intro">
+      <h1>Austin Green Space</h1>
+      <h3>Lucy Gift, Robbert Phillips, Noah Remmert, Emily Robbins, &amp; Luke Wright</h3>
+    </div>
+    <div class="section gray" id="issue">
+      <div class="slide">
+        <h1>The Issue</h1>
+        <blockquote>"Greenspaces are critical elements of a health-promoting community" (CDC)</blockquote>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/0/0c/2008_Summer_Olympics_torch_relay,_Shenzen.jpg" alt="Massive population">
+      </div>
+      <div class="slide">
+        <blockquote>60% of the world's population will live in cities by 2025 (Urbanization)</blockquote>
+                <img src="http://upload.wikimedia.org/wikipedia/commons/2/23/Hong_Kong_Skyline_Restitch_-_Dec_2007.jpg" alt="Hong Kong Skyline">
+
+      </div>
+      <div class="slide">
+        <blockquote>Air pollution kills over 2 million annually (Air Pollution)</blockquote>
+        <img src="http://i2.cdn.turner.com/cnn/dam/assets/130712171949-pollution-india-story-top.jpg" alt="Air pollution">
+      </div>
+      <div class="slide">
+        <blockquote>Only 1.5% of the land in Istanbul, Turkey is public green space (World Cities)</blockquote>
+        <img src="http://www.thetimes.co.uk/tto/multimedia/archive/00419/129094891_FOR_RedDr_419627c.jpg" alt="Protests in Istanbul">
+      </div>
+    </div>
+  </div>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>  
+
+  <script src="vendor/jquery.fullPage.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      css3: true,
+      navigation: true,
+      navigationTooltips: ['Home', 'The Issue']
+    });
+  });
+  </script>
+</body>
+</html>
