@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Austin Green Space</title>
 	<link rel="stylesheet" href="stylesheets/style.css">
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css">
 </head>
 <body>
   <div id="fullpage">
@@ -15,23 +14,81 @@
     <div class="section gray" id="issue">
       <div class="slide">
         <h1>The Issue</h1>
-        <blockquote>"Greenspaces are critical elements of a health-promoting community" (CDC)</blockquote>
-        <img src="http://upload.wikimedia.org/wikipedia/commons/0/0c/2008_Summer_Olympics_torch_relay,_Shenzen.jpg" alt="Massive population">
+        <blockquote>"Greenspaces are critical elements of a health-promoting community" <cite>(CDC)</cite></blockquote>
+        
       </div>
       <div class="slide">
-        <blockquote>60% of the world's population will live in cities by 2025 (Urbanization)</blockquote>
+        <blockquote>60% of the world's population will live in cities by 2025 <cite>(Urbanization)</cite></blockquote>
                 <img src="http://upload.wikimedia.org/wikipedia/commons/2/23/Hong_Kong_Skyline_Restitch_-_Dec_2007.jpg" alt="Hong Kong Skyline">
 
       </div>
       <div class="slide">
-        <blockquote>Air pollution kills over 2 million annually (Air Pollution)</blockquote>
+        <blockquote>
+          "World population to reach 8.1B in 2025" <cite>(UN: World Population)</cite>
+        </blockquote>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/0/0c/2008_Summer_Olympics_torch_relay,_Shenzen.jpg" alt="Massive population">
+      </div>
+      <div class="slide">
+        <blockquote>Air pollution kills over 2 million annually <cite>(Air Pollution)</cite></blockquote>
         <img src="http://i2.cdn.turner.com/cnn/dam/assets/130712171949-pollution-india-story-top.jpg" alt="Air pollution">
       </div>
       <div class="slide">
-        <blockquote>Only 1.5% of the land in Istanbul, Turkey is public green space (World Cities)</blockquote>
+        <blockquote>Only 1.5% of the land in Istanbul, Turkey is public green space <cite>(World Cities)</cite></blockquote>
         <img src="http://www.thetimes.co.uk/tto/multimedia/archive/00419/129094891_FOR_RedDr_419627c.jpg" alt="Protests in Istanbul">
       </div>
     </div>
+    <div class="section austin" id="austin">
+      <h1>We <i class="icon ion-heart"></i> Austin</h1>
+      <div class="text">
+        <h2>We're doing really well</h2>
+        <ul>
+          <li>36 acres park/1,000 people (10 best cities)</li>
+          <li>18% of Austin is parkland (10 best cities)</li>
+        </ul>
+        <h2>But things aren't perfect</h2>
+        <ul>
+          <li>Rapid growth</li>
+          <li>59% of inner-city residents don't live within walking distance of a park (KUT)</li>
+          <li>123 employees available to maintain Austin's 14,911 acres of parkland (KUT)</li>
+          <li>Austinites pay an average of $41 per resident for parks compared to the national average of $75 (KUT)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section" id="takeaction">
+      <h1>Take Action in Austin</h1>
+      <p>Taking action in Austin is simple. Consider one of the following actions!</p>
+      <ul>
+        <li>Help <a href="http://www.thetrailfoundation.org/" target="_blank">The Trail Foundation</a></li>
+        <li>Clean up a park you love</li>
+        <li>Vote for bills to fund the parks system and support politicians who prioritize local parks</li>
+      </ul>
+    </div>
+    <div class="section" id="project">
+      <h1>Our Project</h1>
+      <p>Through interviews with local experts, we determined that the main need in Austin's parks was general improvement and maintenance. In response to that, we improved a popular local spot people bring their dogs to by adding a bench and a flower bed.</p>
+      <img src="images/project.jpg" alt="">
+    </div>
+
+    <div class="section" id="team">
+      <h1>Our Team</h1>
+      <p>Our team consists of Lucy Gift, Robbert Phillips, Noah Remmert, Emily Robbins, &amp; Luke Wright. We are students at <a href="http://www.agsaustin.org/" target="_blank">The Academy for Global Studies at Austin High.</a></p>
+      <p>After seeing the green spaces present in Costa Rica while traveling on a school trip, we were inspired to research the global impact of parks and public spaces.</p>
+      <br>
+      <h1>Our Advocacy</h1>
+      <h3>View some of our team's advocacy projects</h3>
+      <a href="#">This website</a> was built by Luke Wright
+    </div>
+    <div class="section" id="sources">
+      <h1>Works Cited</h1>
+      <cite>Wendel, Arthur M, MD. "How Community Design and Greenspace Impact Public Health." CDC. Presentation.</cite>
+      <cite>"Urbanization and Global Change." University of Michigan, 2002. Web. 23 Apr. 2014.</cite>
+      <cite>Olson, Alexandra. "U.N.: World Population to Reach 8.1B in 2025." <em>USA Today</em>. Gannett, 13 June 2013. Web. 23 Apr. 2014.</cite>
+      <cite>Knight, Matthew. "Air Pollution Killing over Two Million Annually, Study Says." <em>CNN.</em> Cable News Network, 16 June 2013. Web. 23 Apr. 2014.</cite>
+      <cite>"% of Public Green Space (parks and Gardens)." <em>World Cities Culture Report.</em> World Cities Culture Forum, 2014. Web. 23 Apr. 2014.</cite>
+      <cite>"10 Best Cities for Urban Forests." <em>American Forests.</em> American Forests. Web. 23 Apr. 2014.</cite>
+      <cite>Bernier, Nathan. "59 Percent Of Austin's Inner City Residents Don't Live Near Park." <em>KUT.org.</em> KUT, 31 Jan. 2011. Web. 23 Apr. 2014.</cite>
+    </div>
+
   </div>
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>  
@@ -40,9 +97,10 @@
   <script>
   $(document).ready(function() {
     $('#fullpage').fullpage({
+      anchors: ['top', 'issue-global', 'atx', 'actionatx', 'projectsection', 'mainteam', 'works'],
       css3: true,
       navigation: true,
-      navigationTooltips: ['Home', 'The Issue']
+      navigationTooltips: ['Home', 'The Issue', 'ATX', 'Take Action', 'Our Project', 'Our Team', 'Sources']
     });
   });
   </script>

@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'jquery.fullPage';
+@import 'icons/ionicons';
 
 html, body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -24,9 +25,61 @@ blockquote {
 	margin: 20px auto;
 
 }
-
 #intro {
 	background:url(../images/sun.png) -70px -60px no-repeat ;
+}
+.austin {
+	background:url(https://farm6.staticflickr.com/5561/13986819501_ec1447b6b2_k.jpg);
+	background-size: cover;
+}
+#project {
+	img{max-height: 450px;}
+}
+#team {
+	background-color: #fff;
+}
+
+#takeaction {
+	background-color: #FFD38F;
+	p, ul {
+		font-size: 1.4em;
+		max-width: 50%;
+		margin: 5px auto;
+	}
+	ul {
+		list-style: circle;
+		text-align: left;
+		line-height: 1.2em;
+	}
+}
+
+#sources {
+	cite {
+		max-width: 50%;
+		display: block;
+		margin: 5px auto;
+		text-align: left;
+	}
+}
+
+.text{
+	background-color: rgba(255,255,255, 0.65);
+	max-width: 50%;
+	margin: 10px auto;
+	border-radius: 10px;
+	padding: 10px;
+	ul {
+		text-align: left;
+		list-style: circle;
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
+}
+
+p {
+	max-width: 50%;
+	margin: 10px auto;
+	line-height: 1.2em;
 }
 
 .gray {
