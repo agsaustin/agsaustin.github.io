@@ -2383,7 +2383,7 @@ html, body {
 
 html, body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #6affd3;
+  background-color: #96EAD4;
   color: #304f55;
   text-align: center; }
 
@@ -2421,7 +2421,7 @@ blockquote {
   background-color: #fff; }
 
 #takeaction {
-  background-color: #FFD38F; }
+  background-color: #F1EFA5; }
   #takeaction p, #takeaction ul {
     max-width: 50%;
     margin: 5px auto; }
